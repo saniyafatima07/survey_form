@@ -1,69 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="utf-8" />
-<link rel="stylesheet" href="index.css" />
-<title>Registration Form</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <title>Registration Form</title>
   <head>
     <h1 id="title">Survey Form</h1>
-<p id="description">Your opinion matters! Thank you for helping us enhance our services.
- </p>
+    <p id="description">
+      Your opinion matters! Thank you for helping us enhance our services.
+    </p>
   </head>
-<body>
-  <form id="survey-form" method="post">
-    <fieldset>
-      <label for="name" id="name-label">Name:</label>
-        <label><input type="text" id="name" name="yourname" placeholder="Enter your name" required></label>
-    </fieldset>
-    <fieldset>
-      <label for="youremail" id="email-label">Email:</label>
-        <label><input id="email" type="email" name="youremail" placeholder="Enter your email" required></label>
-    </fieldset>
-    <fieldset>
-      <label for="yourage" id="number-label">Age: (optional)</label>
-        <label><input type="number" id="number" name="yourage" min="13" max="120" placeholder="Enter your age" required></label>
-    </fieldset>
-    <fieldset>
-      <label for="role">Your current role:</label>
-      <select id="dropdown" name="role">
-       <option value="">Select your current role</option>
-       <option value="1">Student</option>
-       <option value="2">Full time job</option>
-       <option value="3">Prefer not to say</option>
-       <option value="4">Other</option>
-      </select>
-    </fieldset>
-    <fieldset>
-      <legend>Would you recommend my website to anyone?</legend>
-      <label for="recommendation"> <input id="recommendation" class="inline" name="recommend" type="radio" value="yes" >Yes</label>
-      <label for="recommendation"> <input id="checkbox" class="inline" name="recommend" type="radio" value="no" >No</label>
-      <label for="recommendation"> <input id="checkbox" class="inline" name="recommend" type="radio" value="mp" >Most Probably</label>
-    </fieldset>
-    <fieldset>
-      <label for="features">Which feature of the website fascinates you?</label>
-      <select id="dropdown" name="features">
-        <option value="">Select an option</option>
-       <option value="1">Challenges</option>
-       <option value="2">Projects</option>
-       <option value="3">Community</option>
-       <option value="4">Open Source</option>
-      </select>
-    </fieldset>
-    <fieldset>
-      <label for="improve">What improvements are needed in the website?(select all that apply)</label><br>
-      <label for="improve"><input id="checkbox" type="checkbox" name="improvements" value="Front-end"> Front-end projects</label><br>
-      <label for="improve"><input id="checkbox" type="checkbox" name="improvements" value="Back-end"> Back-end projects</label><br>
-      <label for="improve"><input id="checkbox" type="checkbox" name="improvements" value="DV"> Data Visualization</label><br>
-      <label for="improve"><input id="checkbox" type="checkbox" name="improvements" value="Challenges"> Challenges </label><br>
-      <label for="improve"><input id="checkbox" type="checkbox" name="improvements" value="Videos"> Videos </label><br>
-    <label for="improve"><input id="checkbox" type="checkbox" name="improvements" value="OS" > Open Source Community </label><br>
-    <label for="improve"><input id="checkbox" type="checkbox" name="improvements" value="Forum"> Forum </label><br>
-    <label for="improve"><input id="checkbox" type="checkbox" name="improvements" value="Additional Courses"> Additional Courses </label><br>
-    </fieldset>
-    <fieldset>
-      <label for="comments">Any comments or suggestions?</label>
-        <label><textarea id="comments" name="comments" rows="6" cols="48" placeholder="Enter your comment here..."></textarea></label>
-    </fieldset>
-      <label for="submit"><input id="submit" type="submit" name="submit" value="Submit"></label>
-  </form>
-</body>
+  <body>
+    <form id="survey-form" method="post">
+      <fieldset>
+        <label for="name" id="name-label">Name:</label>
+        <label
+          ><input
+            type="text"
+            id="name"
+            name="yourname"
+            placeholder="Enter your name"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="youremail" id="email-label">Email:</label>
+        <label
+          ><input
+            id="email"
+            type="email"
+            name="youremail"
+            placeholder="Enter your email"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="yourage" id="number-label">Age: (optional)</label>
+        <label
+          ><input
+            type="number"
+            id="number"
+            name="yourage"
+            min="13"
+            max="120"
+            placeholder="Enter your age"
+            required
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label for="role">Your current role:</label>
+        <select id="dropdown" name="role">
+          <option value="">Select your current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Prefer not to say</option>
+          <option value="4">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend my website to anyone?</legend>
+        <label for="recommendation">
+          <input
+            id="recommendation"
+            class="inline"
+            name="recommend"
+            type="radio"
+            value="yes"
+          />Yes</label
+        >
+        <label for="recommendation">
+          <input
+            id="checkbox"
+            class="inline"
+            name="recommend"
+            type="radio"
+            value="no"
+          />No</label
+        >
+        <label for="recommendation">
+          <input
+            id="checkbox"
+            class="inline"
+            name="recommend"
+            type="radio"
+            value="mp"
+          />Most Probably</label
+        >
+      </fieldset>
+      <fieldset>
+        <label for="features"
+          >Which feature of the website fascinates you?</label
+        >
+        <select id="dropdown" name="features">
+          <option value="">Select an option</option>
+          <option value="1">Challenges</option>
+          <option value="2">Projects</option>
+          <option value="3">Community</option>
+          <option value="4">Open Source</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="improve"
+          >What improvements are needed in the website?(select all that
+          apply)</label
+        ><br />
+        <label for="improve"
+          ><input
+            id="checkbox"
+            type="checkbox"
+            name="improvements"
+            value="Front-end"
+          />
+          Front-end projects</label
+        ><br />
+        <label for="improve"
+          ><input
+            id="checkbox"
+            type="checkbox"
+            name="improvements"
+            value="Back-end"
+          />
+          Back-end projects</label
+        ><br />
+        <label for="improve"
+          ><input
+            id="checkbox"
+            type="checkbox"
+            name="improvements"
+            value="DV"
+          />
+          Data Visualization</label
+        ><br />
+        <label for="improve"
+          ><input
+            id="checkbox"
+            type="checkbox"
+            name="improvements"
+            value="Challenges"
+          />
+          Challenges </label
+        ><br />
+        <label for="improve"
+          ><input
+            id="checkbox"
+            type="checkbox"
+            name="improvements"
+            value="Videos"
+          />
+          Videos </label
+        ><br />
+        <label for="improve"
+          ><input
+            id="checkbox"
+            type="checkbox"
+            name="improvements"
+            value="OS"
+          />
+          Open Source Community </label
+        ><br />
+        <label for="improve"
+          ><input
+            id="checkbox"
+            type="checkbox"
+            name="improvements"
+            value="Forum"
+          />
+          Forum </label
+        ><br />
+        <label for="improve"
+          ><input
+            id="checkbox"
+            type="checkbox"
+            name="improvements"
+            value="Additional Courses"
+          />
+          Additional Courses </label
+        ><br />
+      </fieldset>
+      <fieldset>
+        <label for="comments">Any comments or suggestions?</label>
+        <label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="6"
+            cols="48"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <label for="submit"
+        ><input id="submit" type="submit" name="submit" value="Submit"
+      /></label>
+    </form>
+  </body>
 </html>
